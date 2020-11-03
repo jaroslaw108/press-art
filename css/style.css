@@ -57,12 +57,14 @@ a:visited {
 /*BUTTONS*/
 .btn-box {
   display: flex;
+  margin-top: 2rem;
 }
 .btn {
   display: inline-block;
   border: 1px solid #1f5b65;
   margin-right: 5px;
   padding: 7px 15px;
+  text-transform: uppercase;
   transition: all 0.3s ease;
 }
 .btn:hover {
@@ -148,7 +150,7 @@ nav img {
 }
 /* Main Header */
 .main-header {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/after-header-bg.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://jaroslaw108.github.io/press-art/img/after-header-bg.jpeg);
   background-size: cover;
   background-position: 50% 62%;
   background-attachment: fixed;
@@ -292,7 +294,7 @@ footer.site-footer {
 }
 footer.site-footer p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 footer nav {
   margin-bottom: 1rem;
@@ -310,6 +312,13 @@ footer nav {
 }
 .site-footer .footer-info p {
   font-size: 0.9rem;
+}
+.footer-menu li {
+    display: block;
+  }
+.footer-menu li a:link,
+.footer-menu li a:visited {
+  border: none;
 }
 /* CUSTOM STYLES FOR SUBPAGES */
 #about .content .grid {
@@ -438,11 +447,14 @@ footer nav {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 375px) {
   header p {
     justify-content: center;
   }
   header p a {
     flex-direction: column;
+  }
+  .btn {
+    font-size: 1.1rem;
   }
 }

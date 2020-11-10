@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 :root {
   --main-bgc: #F5EEE0;
@@ -13,6 +14,7 @@
 html {
   font-size: 100%;
   height: 100%;
+  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 body {
@@ -150,9 +152,9 @@ nav img {
 }
 /* Main Header */
 .main-header {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://jaroslaw108.github.io/press-art/img/after-header-bg.jpeg);
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/header-bg.jpg);
   background-size: cover;
-  background-position: 50% 62%;
+  background-position: center center;
   background-attachment: fixed;
   min-height: 420px;
   display: flex;
@@ -166,17 +168,19 @@ nav img {
 .main-header h1,
 .main-header h2 {
   color: #F5EEE0;
-  text-transform: uppercase;
   font-weight: 300;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 .main-header h1 {
   font-size: 2.75rem;
   line-height: 0.9;
+  color: #ff481a;
 }
 .main-header h1 small {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 10px;
+  color: #F5EEE0;
 }
 .main-header h2 {
   margin-top: 0.5rem;
